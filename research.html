@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Research - SPEL, KAIST</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <div class="header-inner">
+      <a href="index.html" class="brand">
+        <img src="images/spel-logo-white.png" alt="SPEL logo" class="brand-logo" onerror="this.style.display='none'">
+        <span class="brand-text">
+          <span class="brand-en">Smart Process Engineering Laboratory</span>
+          <span class="brand-kr">스마트공정공학 연구실 · KAIST</span>
+        </span>
+      </a>
+      <input type="checkbox" id="nav-toggle">
+      <label for="nav-toggle" class="nav-toggle-label">☰</label>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="member.html">Member</a>
+        <a href="research.html">Research</a>
+        <a href="project.html">Project</a>
+        <a href="publication.html">Publication</a>
+        <a href="news.html">News</a>
+        <a href="gallery.html">Gallery</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <section id="mission">
+      <div class="section-head">
+        <h2>Research</h2>
+      </div>
+      <p class="section-intro">
+        SPEL aims to accelerate the transition to a sustainable future by developing innovative computational tools.
+        We build creative computational methods using process systems engineering &mdash; optimization, simulation,
+        control, and machine learning &mdash; that make a positive impact across a range of industries.
+        Click on an area below for more detail.
+      </p>
+    </section>
+
+    <section id="areas">
+      <div class="grid">
+
+        <div class="card clickable" role="button" tabindex="0"
+             onclick="document.getElementById('dlg-energy-storage').showModal()" onkeydown="if(event.key==='Enter')this.click()">
+          <span class="tag">Energy Storage</span>
+          <h3>Electrochemical Energy Storage</h3>
+        </div>
+        <dialog id="dlg-energy-storage" class="member-dialog wide-dialog">
+          <button class="dialog-close" onclick="this.closest('dialog').close()">✕</button>
+          <h3>Electrochemical Energy Storage</h3>
+          <p class="dialog-description">
+            We address battery lifetime prediction and operational reliability through integrated approaches that
+            combine physics-based modeling with careful feature engineering and machine learning transfer techniques.
+            This enables models to respect physical laws while adapting across different battery chemistries, formats,
+            and usage patterns &mdash; tackling the heterogeneous, incomplete, and event-driven nature of field data to
+            improve uncertainty quantification in remaining-useful-life estimates. Our work produces non-invasive
+            diagnostics and digital representations revealing thermal dynamics, aging precursors, and optimal charging
+            approaches within practical constraints.
+          </p>
+          <div class="dialog-photos">
+            <img class="dialog-photo" src="images/research/Electrochemical%20Energy%20Storage/1.png" alt="Electrochemical Energy Storage 1"
+                 onerror="this.onerror=null;this.replaceWith(Object.assign(document.createElement('div'),{className:'dialog-photo-fallback',textContent:'Photo'}));">
+            <img class="dialog-photo" src="images/research/Electrochemical%20Energy%20Storage/2.png" alt="Electrochemical Energy Storage 2"
+                 onerror="this.onerror=null;this.replaceWith(Object.assign(document.createElement('div'),{className:'dialog-photo-fallback',textContent:'Photo'}));">
+          </div>
+          <ul class="dialog-focus">
+            <li><span class="focus-label">Data Management</span> &mdash; build standardized, cross-chemistry datasets and robust health indicators from noisy field logs.</li>
+            <li><span class="focus-label">Advanced Modeling</span> &mdash; embed electrochemical constraints and transfer models across cells, packs, and use cases.</li>
+            <li><span class="focus-label">Predictive Analytics</span> &mdash; quantify prediction intervals for RUL/SOH and propagate to risk-aware maintenance.</li>
+            <li><span class="focus-label">System Optimization</span> &mdash; link diagnostics to charging, warranty, and asset-management policies.</li>
+          </ul>
+          <p class="dialog-members">Associated members: <strong>Sangjun Jeon</strong>, <strong>Yooil Son</strong></p>
+        </dialog>
+
+        <div class="card clickable" role="button" tabindex="0"
+             onclick="document.getElementById('dlg-hydrogen').showModal()" onkeydown="if(event.key==='Enter')this.click()">
+          <span class="tag">Hydrogen &amp; Energy Systems</span>
+          <h3>Hydrogen &amp; Sector-Coupled Energy Systems</h3>
+        </div>
+        <dialog id="dlg-hydrogen" class="member-dialog wide-dialog">
+          <button class="dialog-close" onclick="this.closest('dialog').close()">✕</button>
+          <h3>Hydrogen &amp; Sector-Coupled Energy Systems</h3>
+          <p class="dialog-description">
+            Hydrogen production from renewable sources faces obstacles including high costs, infrastructure
+            limitations, and significant uncertainty from weather patterns and market volatility. Our approach
+            integrates process-level physics with economic investment and operational models, examining how
+            grid-scale batteries can improve performance. Using scenario-based and stochastic optimization, we
+            develop strategies that maintain cost-effectiveness despite variability while revealing where policy
+            support provides maximum benefit. Our broader vision extends to coordinating electricity, heating, and
+            transportation systems for a sustainable energy transition.
+          </p>
+          <div class="dialog-photos">
+            <img class="dialog-photo" src="images/research/Hydrogen%20%26%20Sector-Coupled%20Energy%20Systems/1.png" alt="Hydrogen &amp; Sector-Coupled Energy Systems 1"
+                 onerror="this.onerror=null;this.replaceWith(Object.assign(document.createElement('div'),{className:'dialog-photo-fallback',textContent:'Photo'}));">
+            <img class="dialog-photo" src="images/research/Hydrogen%20%26%20Sector-Coupled%20Energy%20Systems/2.png" alt="Hydrogen &amp; Sector-Coupled Energy Systems 2"
+                 onerror="this.onerror=null;this.replaceWith(Object.assign(document.createElement('div'),{className:'dialog-photo-fallback',textContent:'Photo'}));">
+          </div>
+          <ul class="dialog-focus">
+            <li><span class="focus-label">Techno-economic Assessment</span> &mdash; compare renewable H₂ pathways and levelized costs under weather/price variability.</li>
+            <li><span class="focus-label">Infrastructure &amp; Siting</span> &mdash; optimize pipelines, storage, and ports with spatial constraints and permitting limits.</li>
+            <li><span class="focus-label">Electrolyzer&ndash;Battery Dispatch</span> &mdash; co-optimize sizing and market participation for reliability and cost.</li>
+            <li><span class="focus-label">Sector Coupling &amp; Planning</span> &mdash; integrate electricity&ndash;heat&ndash;transport for robust decarbonization roadmaps.</li>
+          </ul>
+          <p class="dialog-members">Associated members: <strong>Sunwoo Kim</strong>, <strong>Hana Kim</strong>, <strong>Hae Yong Jung</strong>, <strong>Byoungyoun Lee</strong></p>
+        </dialog>
+
+        <div class="card clickable" role="button" tabindex="0"
+             onclick="document.getElementById('dlg-separation').showModal()" onkeydown="if(event.key==='Enter')this.click()">
+          <span class="tag">Separation</span>
+          <h3>Membrane &amp; Separation Processes</h3>
+        </div>
+        <dialog id="dlg-separation" class="member-dialog wide-dialog">
+          <button class="dialog-close" onclick="this.closest('dialog').close()">✕</button>
+          <h3>Membrane &amp; Separation Processes</h3>
+          <p class="dialog-description">
+            We address challenges in membrane processes used for water treatment and carbon capture by combining
+            computational fluid dynamics with physics-informed neural networks to better understand flow dynamics
+            in spacer-filled channels. This approach enables optimization of spacer geometry and operating
+            conditions while balancing flux, energy consumption, and fouling resistance. Our models support
+            digital-twin development that translates insights from channel-scale studies into practical guidance
+            for module and plant-level operations.
+          </p>
+          <div class="dialog-photos">
+            <img class="dialog-photo" src="images/research/Membrane%20%26%20Separation%20Processes/1.png" alt="Membrane &amp; Separation Processes 1"
+                 onerror="this.onerror=null;this.replaceWith(Object.assign(document.createElement('div'),{className:'dialog-photo-fallback',textContent:'Photo'}));">
+            <img class="dialog-photo" src="images/research/Membrane%20%26%20Separation%20Processes/2.png" alt="Membrane &amp; Separation Processes 2"
+                 onerror="this.onerror=null;this.replaceWith(Object.assign(document.createElement('div'),{className:'dialog-photo-fallback',textContent:'Photo'}));">
+          </div>
+          <ul class="dialog-focus">
+            <li><span class="focus-label">CFD → PINN Workflow</span> &mdash; generate channel-level datasets and train PINNs that respect continuity/momentum constraints.</li>
+            <li><span class="focus-label">Geometry &amp; Operation Optimization</span> &mdash; co-design spacer patterns and operating windows for flux, pressure drop, and fouling risk.</li>
+            <li><span class="focus-label">Risk &amp; Sustainability</span> &mdash; predict fouling/cleaning trade-offs and connect to TEA/LCA for process-level decisions.</li>
+            <li><span class="focus-label">Digital Twin &amp; Scale-up</span> &mdash; translate channel models to module/system design and real-time monitoring.</li>
+          </ul>
+          <p class="dialog-members">Associated members: <strong>Sungjin Bae</strong>, <strong>Jongwoo Kim</strong></p>
+        </dialog>
+
+        <div class="card clickable" role="button" tabindex="0"
+             onclick="document.getElementById('dlg-ai-design').showModal()" onkeydown="if(event.key==='Enter')this.click()">
+          <span class="tag">AI &amp; Process Design</span>
+          <h3>Process Systems Synthesis &amp; AI-Driven Design</h3>
+        </div>
+        <dialog id="dlg-ai-design" class="member-dialog wide-dialog">
+          <button class="dialog-close" onclick="this.closest('dialog').close()">✕</button>
+          <h3>Process Systems Synthesis &amp; AI-Driven Design</h3>
+          <p class="dialog-description">
+            We integrate design and operational considerations rather than optimizing them sequentially. We construct
+            comprehensive superstructures that enumerate possible units, pathways, and connections, then solve
+            mixed-integer nonlinear programs to identify reconfigurable networks capable of operating across diverse
+            conditions. Our methodology employs inverse-design and Bayesian-optimization techniques to guide
+            discovery while minimizing computational requirements; decomposition and convexification maintain
+            mathematical tractability. Planning and scheduling components ensure strategic designs accommodate
+            real-world constraints including maintenance and logistics &mdash; producing flowsheets that are optimal
+            on paper, resilient in practice, and defensible economically and environmentally under uncertainty.
+          </p>
+          <img class="dialog-photo" src="images/research/Process%20Systems%20Synthesis%20%26%20AI-Driven%20Design/1.png" alt="Process Systems Synthesis &amp; AI-Driven Design"
+               onerror="this.onerror=null;this.replaceWith(Object.assign(document.createElement('div'),{className:'dialog-photo-fallback',textContent:'Photo'}));">
+          <ul class="dialog-focus">
+            <li><span class="focus-label">Superstructure Enumeration</span> &mdash; encode alternatives for units, connections, and recycle structures.</li>
+            <li><span class="focus-label">MINLP/MILP &amp; Decomposition</span> &mdash; exploit convexification, cuts, and hierarchical strategies for tractable solves.</li>
+            <li><span class="focus-label">Bayesian Inverse Design</span> &mdash; learn surrogate objectives/constraints and search flowsheets efficiently.</li>
+            <li><span class="focus-label">Planning &amp; Scheduling</span> &mdash; couple strategic designs to production/maintenance under uncertainty.</li>
+          </ul>
+          <p class="dialog-members">Associated members: <strong>Naeun Choi</strong>, <strong>Sunwook Kim</strong>, <strong>Hyunji Kwon</strong></p>
+        </dialog>
+
+        <div class="card clickable" role="button" tabindex="0"
+             onclick="document.getElementById('dlg-graph-theoretic').showModal()" onkeydown="if(event.key==='Enter')this.click()">
+          <span class="tag">Design &amp; Control</span>
+          <h3>Graph-Theoretic Method for Integrated Design and Control</h3>
+        </div>
+        <dialog id="dlg-graph-theoretic" class="member-dialog wide-dialog">
+          <button class="dialog-close" onclick="this.closest('dialog').close()">✕</button>
+          <h3>Graph-Theoretic Method for Integrated Design and Control</h3>
+          <p class="dialog-description">
+            Traditionally, control structure design problems are considered once steady-state process design is
+            fixed. This research identifies a critical limitation: optimal process designs often create operational
+            challenges due to narrow safety margins. We address the challenge of simultaneously optimizing process
+            design and control structure selection, rather than treating them as sequential problems, by developing
+            graph-theoretic methods which can identify promising process design configurations with corresponding
+            control structures in an automated fashion.
+          </p>
+          <img class="dialog-photo" src="images/research/Graph-theoretic%20method%20for%20integrated%20design%20and%20control/1.png" alt="Graph-Theoretic Method for Integrated Design and Control"
+               onerror="this.onerror=null;this.replaceWith(Object.assign(document.createElement('div'),{className:'dialog-photo-fallback',textContent:'Photo'}));">
+          <ul class="dialog-focus">
+            <li><span class="focus-label">Equation-Graph Extraction</span> &mdash; constructing variable-equation graphs and calculating relative-degree matrices.</li>
+            <li><span class="focus-label">I/O Pairing &amp; Paths</span> &mdash; identifying the shortest input-output paths and determining viable decentralized control configurations.</li>
+            <li><span class="focus-label">Hierarchical Clustering</span> &mdash; automating the grouping of controllers and breaking down subnetwork structures.</li>
+            <li><span class="focus-label">Co-design &amp; Validation</span> &mdash; testing iterative design-control decisions across comprehensive plant-wide case studies.</li>
+          </ul>
+          <p class="dialog-members">Associated member: <strong>Ji Hee Kim</strong></p>
+        </dialog>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>Smart Process Engineering Laboratory (SPEL), Department of Chemical &amp; Biomolecular Engineering, KAIST</p>
+    <p>291 Daehak-ro, Yuseong-gu, Daejeon 34141, Republic of Korea · <a href="mailto:smheo@kaist.ac.kr">smheo@kaist.ac.kr</a></p>
+    <p>© 2026 SPEL. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
