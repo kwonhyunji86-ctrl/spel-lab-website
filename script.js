@@ -90,7 +90,7 @@ function renderGallery() {
       details.className = "gallery-year";
       if (idx === 0) details.open = true;
 
-      const yearLabel = year === "2024" ? "~2024" : year;
+      const yearLabel = year === "2024" ? "-2024" : year;
       const summary = document.createElement("summary");
       summary.innerHTML = `<span class="arrow">▸</span> ${yearLabel}`;
       details.appendChild(summary);
