@@ -170,29 +170,29 @@
 
         <div class="card clickable" role="button" tabindex="0"
              onclick="document.getElementById('dlg-graph-theoretic').showModal()" onkeydown="if(event.key==='Enter')this.click()">
-          <span class="tag">Design &amp; Control</span>
-          <h3>Graph-Theoretic Method for Integrated Design and Control</h3>
+          <span class="tag">Design, Control &amp; AI</span>
+          <h3>Graph-Theoretic Co-Design and AI-Augmented Optimization</h3>
         </div>
         <dialog id="dlg-graph-theoretic" class="member-dialog wide-dialog">
           <button class="dialog-close" onclick="this.closest('dialog').close()">✕</button>
-          <h3>Graph-Theoretic Method for Integrated Design and Control</h3>
+          <h3>Graph-Theoretic Co-Design and AI-Augmented Optimization</h3>
           <p class="dialog-description">
-            Traditionally, control structure design problems are considered once steady-state process design is
-            fixed. This research identifies a critical limitation: optimal process designs often create operational
-            challenges due to narrow safety margins. We address the challenge of simultaneously optimizing process
-            design and control structure selection, rather than treating them as sequential problems, by developing
-            graph-theoretic methods which can identify promising process design configurations with corresponding
-            control structures in an automated fashion.
+            This research develops automated, graph-theoretic methods for simultaneous process design and control
+            structure selection, addressing the operational risks of narrow safety margins in sequentially optimized
+            designs. It also develops an AI-augmented stochastic optimization framework for large-scale energy
+            systems&mdash;multi-microgrids, electricity markets, hydrogen systems&mdash;where AI supports
+            decomposition, tuning, and initialization while stochastic optimization remains the core decision-making
+            backbone, improving computational efficiency and scalability.
           </p>
-          <img class="dialog-photo" src="images/research/Graph-theoretic%20method%20for%20integrated%20design%20and%20control/1.png" alt="Graph-Theoretic Method for Integrated Design and Control"
+          <img class="dialog-photo" src="images/research/Graph-theoretic%20method%20for%20integrated%20design%20and%20control/1.png" alt="Graph-Theoretic Co-Design and AI-Augmented Optimization"
                onerror="this.onerror=null;this.replaceWith(Object.assign(document.createElement('div'),{className:'dialog-photo-fallback',textContent:'Photo'}));">
           <ul class="dialog-focus">
-            <li><span class="focus-label">Equation-Graph Extraction</span> &mdash; constructing variable-equation graphs and calculating relative-degree matrices.</li>
-            <li><span class="focus-label">I/O Pairing &amp; Paths</span> &mdash; identifying the shortest input-output paths and determining viable decentralized control configurations.</li>
-            <li><span class="focus-label">Hierarchical Clustering</span> &mdash; automating the grouping of controllers and breaking down subnetwork structures.</li>
-            <li><span class="focus-label">Co-design &amp; Validation</span> &mdash; testing iterative design-control decisions across comprehensive plant-wide case studies.</li>
+            <li><span class="focus-label">Graph-Based Co-Design</span> &mdash; variable-equation graphs and I/O path analysis to jointly determine process design and control configurations.</li>
+            <li><span class="focus-label">Hierarchical Validation</span> &mdash; clustering controllers and subnetworks, validated through plant-wide case studies.</li>
+            <li><span class="focus-label">Uncertainty-Aware Decomposition</span> &mdash; using variable-constraint coupling under uncertainty to divide large stochastic problems.</li>
+            <li><span class="focus-label">AI-Guided Verification</span> &mdash; AI-recommended decomposition and tuning, accepted only after feasibility checks, with fallback to baseline methods.</li>
           </ul>
-          <p class="dialog-members">Associated member: <strong>Ji Hee Kim</strong></p>
+          <p class="dialog-members">Associated members: <strong>Ji Hee Kim</strong>, <strong>Yoojung Yoon</strong></p>
         </dialog>
 
       </div>
