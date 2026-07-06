@@ -745,57 +745,6 @@ a.card .card-arrow {
 .tag-입학\/진학 { background-color: #4a5a70; }
 .tag-기타 { background-color: #6b7280; }
 
-/* Project */
-.project-table {
-  width: 100%;
-  border-collapse: collapse;
-  background-color: var(--card);
-  border-radius: 12px;
-  overflow: hidden;
-  box-shadow: 0 6px 16px rgba(11, 47, 82, 0.05);
-}
-
-.project-table th,
-.project-table td {
-  padding: 12px 16px;
-  text-align: left;
-  font-size: 14px;
-  border-bottom: 1px solid var(--border);
-}
-
-.project-table th:last-child,
-.project-table td:last-child {
-  white-space: nowrap;
-}
-
-.project-table th {
-  background-color: var(--navy);
-  color: white;
-  font-weight: 600;
-}
-
-.project-table tr:last-child td {
-  border-bottom: none;
-}
-
-.status-pill {
-  display: inline-block;
-  font-size: 11px;
-  font-weight: 700;
-  padding: 2px 10px;
-  border-radius: 999px;
-}
-
-.status-ongoing {
-  background-color: #e6f4f1;
-  color: var(--teal);
-}
-
-.status-completed {
-  background-color: #eef1f4;
-  color: var(--muted);
-}
-
 /* Gallery / generic toggle groups */
 .gallery-year,
 .toggle-group {

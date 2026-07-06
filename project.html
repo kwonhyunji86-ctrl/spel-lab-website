@@ -37,114 +37,180 @@
       <div class="section-head">
         <h2>Ongoing Projects &mdash; Government-Funded</h2>
       </div>
+      <p class="section-intro">Click on a project for details.</p>
 
-      <table class="project-table">
-        <thead>
-          <tr>
-            <th>사업명 (Program)</th>
-            <th>과제명 (Title)</th>
-            <th>Agency</th>
-            <th>Period</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>CO<sub>2</sub>동시포집-전환(RCC)융합기술개발사업</td>
-            <td>대기 중 CO<sub>2</sub>로부터 알코올 생산을 위한 포집-전환 일체형 모듈 시스템 개발</td>
-            <td>한국연구재단</td>
-            <td>2026.04&ndash;2030.12</td>
-          </tr>
-          <tr>
-            <td>신진연구(유형B)</td>
-            <td>불확실성을 고려한 인공지능 보강 대규모 에너지 시스템 의사결정 프레임워크 개발</td>
-            <td>한국연구재단</td>
-            <td>2026.03&ndash;2031.02</td>
-          </tr>
-          <tr>
-            <td>InnoCORE 연구단</td>
-            <td>지능형 수소기술 혁신연구단</td>
-            <td>과학기술정보통신부</td>
-            <td>2025.07&ndash;2029.12</td>
-          </tr>
-          <tr>
-            <td>글로벌탄소규제대응 통합관리기술개발사업</td>
-            <td>CO<sub>2</sub> 포집-저장-활용 기술 온실가스 감축량 평가기술 개발</td>
-            <td>한국환경산업기술원</td>
-            <td>2025.04&ndash;2028.12</td>
-          </tr>
-          <tr>
-            <td>선도연구센터(ERC)</td>
-            <td>분산형 저탄소 수소생산 연구센터</td>
-            <td>한국연구재단</td>
-            <td>2024.03&ndash;2029.02</td>
-          </tr>
-        </tbody>
-      </table>
+      <div class="grid">
+
+        <div class="card clickable" role="button" tabindex="0"
+             onclick="document.getElementById('dlg-proj-1').showModal()" onkeydown="if(event.key==='Enter')this.click()">
+          <span class="tag">한국연구재단</span>
+          <h3>대기 중 CO<sub>2</sub>로부터 알코올 생산을 위한 포집-전환 일체형 모듈 시스템 개발</h3>
+        </div>
+        <dialog id="dlg-proj-1" class="member-dialog">
+          <button class="dialog-close" onclick="this.closest('dialog').close()">✕</button>
+          <h3>대기 중 CO<sub>2</sub>로부터 알코올 생산을 위한 포집-전환 일체형 모듈 시스템 개발</h3>
+          <ul class="dialog-focus">
+            <li><span class="focus-label">사업명</span> &mdash; CO<sub>2</sub>동시포집-전환(RCC)융합기술개발사업</li>
+            <li><span class="focus-label">지원기관</span> &mdash; 한국연구재단</li>
+            <li><span class="focus-label">수행기간</span> &mdash; 2026.04&ndash;2030.12</li>
+          </ul>
+        </dialog>
+
+        <div class="card clickable" role="button" tabindex="0"
+             onclick="document.getElementById('dlg-proj-2').showModal()" onkeydown="if(event.key==='Enter')this.click()">
+          <span class="tag">한국연구재단</span>
+          <h3>불확실성을 고려한 인공지능 보강 대규모 에너지 시스템 의사결정 프레임워크 개발</h3>
+        </div>
+        <dialog id="dlg-proj-2" class="member-dialog">
+          <button class="dialog-close" onclick="this.closest('dialog').close()">✕</button>
+          <h3>불확실성을 고려한 인공지능 보강 대규모 에너지 시스템 의사결정 프레임워크 개발</h3>
+          <ul class="dialog-focus">
+            <li><span class="focus-label">사업명</span> &mdash; 신진연구(유형B)</li>
+            <li><span class="focus-label">지원기관</span> &mdash; 한국연구재단</li>
+            <li><span class="focus-label">수행기간</span> &mdash; 2026.03&ndash;2031.02</li>
+          </ul>
+        </dialog>
+
+        <div class="card clickable" role="button" tabindex="0"
+             onclick="document.getElementById('dlg-proj-3').showModal()" onkeydown="if(event.key==='Enter')this.click()">
+          <span class="tag">과학기술정보통신부</span>
+          <h3>지능형 수소기술 혁신연구단</h3>
+        </div>
+        <dialog id="dlg-proj-3" class="member-dialog">
+          <button class="dialog-close" onclick="this.closest('dialog').close()">✕</button>
+          <h3>지능형 수소기술 혁신연구단</h3>
+          <ul class="dialog-focus">
+            <li><span class="focus-label">사업명</span> &mdash; InnoCORE 연구단</li>
+            <li><span class="focus-label">지원기관</span> &mdash; 과학기술정보통신부</li>
+            <li><span class="focus-label">수행기간</span> &mdash; 2025.07&ndash;2029.12</li>
+          </ul>
+        </dialog>
+
+        <div class="card clickable" role="button" tabindex="0"
+             onclick="document.getElementById('dlg-proj-4').showModal()" onkeydown="if(event.key==='Enter')this.click()">
+          <span class="tag">한국환경산업기술원</span>
+          <h3>CO<sub>2</sub> 포집-저장-활용 기술 온실가스 감축량 평가기술 개발</h3>
+        </div>
+        <dialog id="dlg-proj-4" class="member-dialog">
+          <button class="dialog-close" onclick="this.closest('dialog').close()">✕</button>
+          <h3>CO<sub>2</sub> 포집-저장-활용 기술 온실가스 감축량 평가기술 개발</h3>
+          <ul class="dialog-focus">
+            <li><span class="focus-label">사업명</span> &mdash; 글로벌탄소규제대응 통합관리기술개발사업</li>
+            <li><span class="focus-label">지원기관</span> &mdash; 한국환경산업기술원</li>
+            <li><span class="focus-label">수행기간</span> &mdash; 2025.04&ndash;2028.12</li>
+          </ul>
+        </dialog>
+
+        <div class="card clickable" role="button" tabindex="0"
+             onclick="document.getElementById('dlg-proj-5').showModal()" onkeydown="if(event.key==='Enter')this.click()">
+          <span class="tag">한국연구재단</span>
+          <h3>분산형 저탄소 수소생산 연구센터</h3>
+        </div>
+        <dialog id="dlg-proj-5" class="member-dialog">
+          <button class="dialog-close" onclick="this.closest('dialog').close()">✕</button>
+          <h3>분산형 저탄소 수소생산 연구센터</h3>
+          <ul class="dialog-focus">
+            <li><span class="focus-label">사업명</span> &mdash; 선도연구센터(ERC)</li>
+            <li><span class="focus-label">지원기관</span> &mdash; 한국연구재단</li>
+            <li><span class="focus-label">수행기간</span> &mdash; 2024.03&ndash;2029.02</li>
+          </ul>
+        </dialog>
+
+      </div>
     </section>
 
     <section id="ongoing-industry">
       <div class="section-head">
         <h2>Ongoing Projects &mdash; Industry-Funded</h2>
       </div>
+      <p class="section-intro">Click on a project for details.</p>
 
-      <table class="project-table">
-        <thead>
-          <tr>
-            <th>과제명 (Title)</th>
-            <th>Agency</th>
-            <th>Period</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>AI-driven discovery of CO<sub>2</sub> capture materials for direct air capture under process-level considerations</td>
-            <td>Saudi Aramco</td>
-            <td>2025.09&ndash;2026.08</td>
-          </tr>
-        </tbody>
-      </table>
+      <div class="grid">
+
+        <div class="card clickable" role="button" tabindex="0"
+             onclick="document.getElementById('dlg-proj-6').showModal()" onkeydown="if(event.key==='Enter')this.click()">
+          <span class="tag">Saudi Aramco</span>
+          <h3>AI-driven discovery of CO<sub>2</sub> capture materials for direct air capture under process-level considerations</h3>
+        </div>
+        <dialog id="dlg-proj-6" class="member-dialog">
+          <button class="dialog-close" onclick="this.closest('dialog').close()">✕</button>
+          <h3>AI-driven discovery of CO<sub>2</sub> capture materials for direct air capture under process-level considerations</h3>
+          <ul class="dialog-focus">
+            <li><span class="focus-label">지원기관</span> &mdash; Saudi Aramco</li>
+            <li><span class="focus-label">수행기간</span> &mdash; 2025.09&ndash;2026.08</li>
+          </ul>
+        </dialog>
+
+      </div>
     </section>
 
     <section id="completed-gov">
       <details class="toggle-group">
         <summary class="section-title"><span class="arrow">▸</span> Completed Projects &mdash; Government-Funded</summary>
 
-        <table class="project-table">
-          <thead>
-            <tr>
-              <th>사업명 (Program)</th>
-              <th>과제명 (Title)</th>
-              <th>Agency</th>
-              <th>Period</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>유용물질 생산을 위한 Carbon to X 기술개발사업</td>
-              <td>CCU 공정의 경제성 및 CO<sub>2</sub> 저감효과 기반 실용성 평가 및 향상을 위한 전산모사, 분석과 최적화</td>
-              <td>한국연구재단</td>
-              <td>2020.07&ndash;2025.04</td>
-            </tr>
-            <tr>
-              <td>기본연구</td>
-              <td>지속 가능한 분리 공정 설계를 위한 최적 공정 구조 및 제어 구조의 동시 설계 방법 개발</td>
-              <td>한국연구재단</td>
-              <td>2022.06&ndash;2025.02</td>
-            </tr>
-            <tr>
-              <td>소재부품기술개발-전략핵심소재자립화</td>
-              <td>합성가스로부터 고순도 선형 알파올레핀 생산 기술개발</td>
-              <td>한국산업기술평가관리원</td>
-              <td>2020.08&ndash;2024.12</td>
-            </tr>
-            <tr>
-              <td>스마트디지털엔지니어링전문인력양성사업</td>
-              <td>스마트 디지털 엔지니어링 전문인력 양성</td>
-              <td>서울대학교 산학협력단</td>
-              <td>2023.07&ndash;2024.02</td>
-            </tr>
-          </tbody>
-        </table>
+        <div class="grid">
+
+          <div class="card clickable" role="button" tabindex="0"
+               onclick="document.getElementById('dlg-proj-7').showModal()" onkeydown="if(event.key==='Enter')this.click()">
+            <span class="tag">한국연구재단</span>
+            <h3>CCU 공정의 경제성 및 CO<sub>2</sub> 저감효과 기반 실용성 평가 및 향상을 위한 전산모사, 분석과 최적화</h3>
+          </div>
+          <dialog id="dlg-proj-7" class="member-dialog">
+            <button class="dialog-close" onclick="this.closest('dialog').close()">✕</button>
+            <h3>CCU 공정의 경제성 및 CO<sub>2</sub> 저감효과 기반 실용성 평가 및 향상을 위한 전산모사, 분석과 최적화</h3>
+            <ul class="dialog-focus">
+              <li><span class="focus-label">사업명</span> &mdash; 유용물질 생산을 위한 Carbon to X 기술개발사업</li>
+              <li><span class="focus-label">지원기관</span> &mdash; 한국연구재단</li>
+              <li><span class="focus-label">수행기간</span> &mdash; 2020.07&ndash;2025.04</li>
+            </ul>
+          </dialog>
+
+          <div class="card clickable" role="button" tabindex="0"
+               onclick="document.getElementById('dlg-proj-8').showModal()" onkeydown="if(event.key==='Enter')this.click()">
+            <span class="tag">한국연구재단</span>
+            <h3>지속 가능한 분리 공정 설계를 위한 최적 공정 구조 및 제어 구조의 동시 설계 방법 개발</h3>
+          </div>
+          <dialog id="dlg-proj-8" class="member-dialog">
+            <button class="dialog-close" onclick="this.closest('dialog').close()">✕</button>
+            <h3>지속 가능한 분리 공정 설계를 위한 최적 공정 구조 및 제어 구조의 동시 설계 방법 개발</h3>
+            <ul class="dialog-focus">
+              <li><span class="focus-label">사업명</span> &mdash; 기본연구</li>
+              <li><span class="focus-label">지원기관</span> &mdash; 한국연구재단</li>
+              <li><span class="focus-label">수행기간</span> &mdash; 2022.06&ndash;2025.02</li>
+            </ul>
+          </dialog>
+
+          <div class="card clickable" role="button" tabindex="0"
+               onclick="document.getElementById('dlg-proj-9').showModal()" onkeydown="if(event.key==='Enter')this.click()">
+            <span class="tag">한국산업기술평가관리원</span>
+            <h3>합성가스로부터 고순도 선형 알파올레핀 생산 기술개발</h3>
+          </div>
+          <dialog id="dlg-proj-9" class="member-dialog">
+            <button class="dialog-close" onclick="this.closest('dialog').close()">✕</button>
+            <h3>합성가스로부터 고순도 선형 알파올레핀 생산 기술개발</h3>
+            <ul class="dialog-focus">
+              <li><span class="focus-label">사업명</span> &mdash; 소재부품기술개발-전략핵심소재자립화</li>
+              <li><span class="focus-label">지원기관</span> &mdash; 한국산업기술평가관리원</li>
+              <li><span class="focus-label">수행기간</span> &mdash; 2020.08&ndash;2024.12</li>
+            </ul>
+          </dialog>
+
+          <div class="card clickable" role="button" tabindex="0"
+               onclick="document.getElementById('dlg-proj-10').showModal()" onkeydown="if(event.key==='Enter')this.click()">
+            <span class="tag">서울대학교 산학협력단</span>
+            <h3>스마트 디지털 엔지니어링 전문인력 양성</h3>
+          </div>
+          <dialog id="dlg-proj-10" class="member-dialog">
+            <button class="dialog-close" onclick="this.closest('dialog').close()">✕</button>
+            <h3>스마트 디지털 엔지니어링 전문인력 양성</h3>
+            <ul class="dialog-focus">
+              <li><span class="focus-label">사업명</span> &mdash; 스마트디지털엔지니어링전문인력양성사업</li>
+              <li><span class="focus-label">지원기관</span> &mdash; 서울대학교 산학협력단</li>
+              <li><span class="focus-label">수행기간</span> &mdash; 2023.07&ndash;2024.02</li>
+            </ul>
+          </dialog>
+
+        </div>
       </details>
     </section>
 
@@ -152,27 +218,37 @@
       <details class="toggle-group">
         <summary class="section-title"><span class="arrow">▸</span> Completed Projects &mdash; Industry-Funded</summary>
 
-        <table class="project-table">
-          <thead>
-            <tr>
-              <th>과제명 (Title)</th>
-              <th>Agency</th>
-              <th>Period</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>셀 구성 물질과 상황에 따른 가스 생성 예측 개발 연구</td>
-              <td>LG에너지솔루션</td>
-              <td>2025.06&ndash;2026.05</td>
-            </tr>
-            <tr>
-              <td>가변형 생산공정 최적화 solver 개발</td>
-              <td>CJ제일제당</td>
-              <td>2024.06&ndash;2025.05</td>
-            </tr>
-          </tbody>
-        </table>
+        <div class="grid">
+
+          <div class="card clickable" role="button" tabindex="0"
+               onclick="document.getElementById('dlg-proj-11').showModal()" onkeydown="if(event.key==='Enter')this.click()">
+            <span class="tag">LG에너지솔루션</span>
+            <h3>셀 구성 물질과 상황에 따른 가스 생성 예측 개발 연구</h3>
+          </div>
+          <dialog id="dlg-proj-11" class="member-dialog">
+            <button class="dialog-close" onclick="this.closest('dialog').close()">✕</button>
+            <h3>셀 구성 물질과 상황에 따른 가스 생성 예측 개발 연구</h3>
+            <ul class="dialog-focus">
+              <li><span class="focus-label">지원기관</span> &mdash; LG에너지솔루션</li>
+              <li><span class="focus-label">수행기간</span> &mdash; 2025.06&ndash;2026.05</li>
+            </ul>
+          </dialog>
+
+          <div class="card clickable" role="button" tabindex="0"
+               onclick="document.getElementById('dlg-proj-12').showModal()" onkeydown="if(event.key==='Enter')this.click()">
+            <span class="tag">CJ제일제당</span>
+            <h3>가변형 생산공정 최적화 solver 개발</h3>
+          </div>
+          <dialog id="dlg-proj-12" class="member-dialog">
+            <button class="dialog-close" onclick="this.closest('dialog').close()">✕</button>
+            <h3>가변형 생산공정 최적화 solver 개발</h3>
+            <ul class="dialog-focus">
+              <li><span class="focus-label">지원기관</span> &mdash; CJ제일제당</li>
+              <li><span class="focus-label">수행기간</span> &mdash; 2024.06&ndash;2025.05</li>
+            </ul>
+          </dialog>
+
+        </div>
       </details>
     </section>
 
