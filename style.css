@@ -502,6 +502,10 @@ a.card .card-arrow {
   top: 14px;
   right: 14px;
   border: none;
+  outline: none;
+  box-shadow: none;
+  -webkit-appearance: none;
+  appearance: none;
   background: none;
   font-size: 18px;
   color: var(--muted);
