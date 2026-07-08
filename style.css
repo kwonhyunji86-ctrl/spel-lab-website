@@ -183,6 +183,10 @@ nav a.active {
   transform: translateY(-50%);
   background: none;
   border: none;
+  outline: none;
+  box-shadow: none;
+  -webkit-appearance: none;
+  appearance: none;
   color: #a07902;
   font-size: 16px;
   line-height: 1;
@@ -420,6 +424,19 @@ a.card .card-arrow {
   border-top: 1px solid var(--border);
   padding-top: 12px;
   margin: 0;
+}
+
+.popup-dont-show {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  margin-top: 16px;
+  padding-top: 14px;
+  border-top: 1px solid var(--border);
+  font-size: 13px;
+  color: var(--muted);
+  cursor: pointer;
 }
 
 /* Member groups */

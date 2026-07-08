@@ -41,7 +41,27 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   renderGallery();
+  initRecruitPopup();
 });
+
+function initRecruitPopup() {
+  const popup = document.getElementById("recruit-popup");
+  if (!popup) return;
+
+  const dismissKey = "recruitPopupDismissedDate";
+  const todayStr = new Date().toDateString();
+  const checkbox = document.getElementById("recruit-popup-dont-show");
+
+  if (localStorage.getItem(dismissKey) !== todayStr) {
+    popup.showModal();
+  }
+
+  popup.addEventListener("close", () => {
+    if (checkbox.checked) {
+      localStorage.setItem(dismissKey, todayStr);
+    }
+  });
+}
 
 const GALLERY_DATA = {
   2026: [
