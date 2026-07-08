@@ -44,23 +44,21 @@ document.addEventListener("DOMContentLoaded", () => {
   initRecruitPopup();
 });
 
+const RECRUIT_POPUP_DISMISS_KEY = "recruitPopupDismissedDate";
+
 function initRecruitPopup() {
   const popup = document.getElementById("recruit-popup");
   if (!popup) return;
 
-  const dismissKey = "recruitPopupDismissedDate";
-  const todayStr = new Date().toDateString();
-  const checkbox = document.getElementById("recruit-popup-dont-show");
-
-  if (localStorage.getItem(dismissKey) !== todayStr) {
+  if (localStorage.getItem(RECRUIT_POPUP_DISMISS_KEY) !== new Date().toDateString()) {
     popup.showModal();
   }
+}
 
-  popup.addEventListener("close", () => {
-    if (checkbox.checked) {
-      localStorage.setItem(dismissKey, todayStr);
-    }
-  });
+function dismissRecruitPopupToday() {
+  localStorage.setItem(RECRUIT_POPUP_DISMISS_KEY, new Date().toDateString());
+  const popup = document.getElementById("recruit-popup");
+  if (popup) popup.close();
 }
 
 const GALLERY_DATA = {
