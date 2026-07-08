@@ -590,6 +590,21 @@ a.card .card-arrow {
   font-weight: 700;
 }
 
+.avatar-wrap {
+  position: relative;
+  flex-shrink: 0;
+}
+
+.crown-icon {
+  position: absolute;
+  top: -14px;
+  left: 38%;
+  transform: translateX(-50%) rotate(-12deg);
+  width: 22px;
+  height: auto;
+  pointer-events: none;
+}
+
 .member-item .name {
   font-weight: 700;
   color: var(--text);
