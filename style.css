@@ -598,7 +598,7 @@ a.card .card-arrow {
 .crown-icon {
   position: absolute;
   top: -14px;
-  left: 38%;
+  left: 50%;
   transform: translateX(-50%) rotate(-12deg);
   width: 22px;
   height: auto;
