@@ -116,7 +116,7 @@ function renderGallery() {
       const grid = document.createElement("div");
       grid.className = "album-grid";
 
-      albums.forEach((album, ai) => {
+      [...albums].reverse().forEach((album, ai) => {
         const label = album.name || album.folder;
         const dialogId = `dlg-gallery-${year}-${ai}`;
 
