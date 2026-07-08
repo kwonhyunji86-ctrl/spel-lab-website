@@ -599,7 +599,7 @@ a.card .card-arrow {
   position: absolute;
   top: -14px;
   left: 50%;
-  transform: translateX(-50%) rotate(-12deg);
+  transform: translateX(-50%);
   width: 22px;
   height: auto;
   pointer-events: none;
