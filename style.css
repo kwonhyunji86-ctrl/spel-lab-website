@@ -161,10 +161,11 @@ nav a.active {
 
 /* Notice banner */
 .notice {
+  position: relative;
   background-color: #fff7e6;
   border-bottom: 1px solid #f2d38a;
   color: #a07902;
-  padding: 12px 24px;
+  padding: 12px 48px;
   text-align: center;
   font-size: 14px;
   font-weight: 600;
@@ -173,6 +174,24 @@ nav a.active {
 .notice a {
   color: #a07a08;
   text-decoration: underline;
+}
+
+.notice-close {
+  position: absolute;
+  top: 50%;
+  right: 16px;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  color: #a07902;
+  font-size: 16px;
+  line-height: 1;
+  cursor: pointer;
+  padding: 4px 8px;
+}
+
+.notice-close:hover {
+  color: #7a5b00;
 }
 
 /* Layout sections */
