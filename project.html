@@ -148,6 +148,21 @@
       <p class="section-intro">Click on a project for details.</p>
 
       <div class="project-list">
+
+        <div class="card clickable" role="button" tabindex="0"
+             onclick="document.getElementById('dlg-proj-syngas-pathway').showModal()" onkeydown="if(event.key==='Enter')this.click()">
+          <span class="tag">HD현대오일뱅크</span>
+          <h3>합성가스 전환 경로별 타당성 검토</h3>
+        </div>
+        <dialog id="dlg-proj-syngas-pathway" class="member-dialog">
+          <button class="dialog-close" onclick="this.closest('dialog').close()">✕</button>
+          <h3>합성가스 전환 경로별 타당성 검토</h3>
+          <ul class="dialog-focus">
+            <li class="dialog-en-title">Feasibility assessment of syngas conversion pathways</li>
+            <li><span class="focus-label">지원기관</span> &mdash; HD현대오일뱅크</li>
+            <li><span class="focus-label">수행기간</span> &mdash; 2026.05&ndash;2026.10</li>
+          </ul>
+        </dialog>
         
         <div class="card clickable" role="button" tabindex="0"
              onclick="document.getElementById('dlg-proj-ai-co2-capture-materials-discovery').showModal()" onkeydown="if(event.key==='Enter')this.click()">
