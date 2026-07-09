@@ -433,16 +433,27 @@ a.card .card-arrow {
 }
 
 .popup-dont-show {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 6px;
+  display: block;
+  width: 100%;
+  background: none;
+  border: none;
+  outline: none;
+  box-shadow: none;
+  -webkit-appearance: none;
+  appearance: none;
+  text-align: center;
   margin-top: 16px;
   padding-top: 14px;
   border-top: 1px solid var(--border);
   font-size: 13px;
+  font-family: inherit;
   color: var(--muted);
   cursor: pointer;
+}
+
+.popup-dont-show:hover {
+  color: var(--navy);
+  text-decoration: underline;
 }
 
 /* Member groups */
