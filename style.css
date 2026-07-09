@@ -418,6 +418,11 @@ a.card .card-arrow {
   font-weight: 700;
 }
 
+.dialog-focus li.dialog-en-title {
+  color: var(--navy);
+  font-weight: 600;
+}
+
 .dialog-members {
   font-size: 13.5px;
   color: var(--muted);
