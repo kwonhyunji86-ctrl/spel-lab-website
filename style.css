@@ -421,6 +421,7 @@ a.card .card-arrow {
 .dialog-focus li.dialog-en-title {
   color: var(--navy);
   font-weight: 600;
+  text-align: center;
 }
 
 .dialog-members {
