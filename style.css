@@ -613,7 +613,7 @@ a.card .card-arrow {
 }
 
 .crown-icon {
-  position: absolute;
+  position: absolute; 
   top: -11px;
   left: 50%;
   transform: translateX(-50%);
