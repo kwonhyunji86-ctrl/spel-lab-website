@@ -69,7 +69,7 @@ const GALLERY_DATA = {
     { folder: "2026. 05. 12. 스승의 날", count: 4 },
     { folder: "2026. 05. 13. - 05. 15. 한국공업화학회 봄 총회", count: 4 },
     { folder: "2026. 05. 24. 상준 결혼식", count: 3 },
-    { folder: "2026. 07. 20. - 2026. 07. 23 KIChE 공정시스템 여름학교 및 하계 심포지엄", count: 5, exts: { 1: "gif" } },
+    { folder: "2026. 07. 20. - 2026. 07. 23. KIChE 공정시스템 여름학교 및 하계 심포지엄", count: 5, exts: { 1: "gif" } },
   ],
   2025: [
     { folder: "2025. 02. 14. 학위수여식", count: 16, exts: { 4: "png" } },
