@@ -79,6 +79,21 @@
         <div class="member-list">
 
           <div class="member-item clickable" role="button" tabindex="0"
+               onclick="document.getElementById('dlg-sunwoo-kim').showModal()" onkeydown="if(event.key==='Enter')this.click()">
+            <div class="info"><div class="name">Sunwoo Kim (김선우)</div><div class="meta">Korea Institute of Energy Research</div></div>
+          </div>
+          <dialog id="dlg-sunwoo-kim" class="member-dialog">
+            <button class="dialog-close" onclick="this.closest('dialog').close()">✕</button>
+            <h3>Sunwoo Kim (김선우)</h3>
+            <p class="dialog-position">Korea Institute of Energy Research</p>
+            <ul class="dialog-edu">
+              <li><strong>Ph.D. Chemical and Biomolecular Engineering, KAIST, 2026</strong></li>
+              <li>M.S. Chemical and Biomolecular Engineering, KAIST, 2023</li>
+              <li>B.S. Chemical and Biomolecular Engineering, KAIST, 2021</li>
+            </ul>
+          </dialog>
+
+          <div class="member-item clickable" role="button" tabindex="0"
                onclick="document.getElementById('dlg-joungho-park').showModal()" onkeydown="if(event.key==='Enter')this.click()">
             <div class="info"><div class="name">Joungho Park (박정호)</div><div class="meta">Korea Institute of Energy Research</div></div>
           </div>
@@ -209,21 +224,6 @@
               <li><strong>Ph.D. Chemical and Biomolecular Engineering, KAIST, 2024</strong></li>
               <li>M.S. Chemical and Biomolecular Engineering, KAIST, 2017</li>
               <li>B.S. Chemical and Biomolecular Engineering, KAIST, 2015</li>
-            </ul>
-          </dialog>
-
-          <div class="member-item clickable" role="button" tabindex="0"
-               onclick="document.getElementById('dlg-sunwoo-kim').showModal()" onkeydown="if(event.key==='Enter')this.click()">
-            <div class="info"><div class="name">Sunwoo Kim (김선우)</div><div class="meta">Korea Institute of Energy Research</div></div>
-          </div>
-          <dialog id="dlg-sunwoo-kim" class="member-dialog">
-            <button class="dialog-close" onclick="this.closest('dialog').close()">✕</button>
-            <h3>Sunwoo Kim (김선우)</h3>
-            <p class="dialog-position">Korea Institute of Energy Research</p>
-            <ul class="dialog-edu">
-              <li><strong>Ph.D. Chemical and Biomolecular Engineering, KAIST, 2026</strong></li>
-              <li>M.S. Chemical and Biomolecular Engineering, KAIST, 2023</li>
-              <li>B.S. Chemical and Biomolecular Engineering, KAIST, 2021</li>
             </ul>
           </dialog>
 
