@@ -7,15 +7,21 @@
 }
 
 :root {
-  --navy: #0F0F70;
-  --navy-dark: #0a0a46;
-  --blue: #1f5fa8;
-  --teal: #42bea5;
-  --bg: #f6f8fb;
-  --card: #ffffff;
-  --border: #e2e8f0;
-  --text: #1f2937;
-  --muted: #5b6b7d;
+  --SPEL-Blue-Core: #003366;
+  --SPEL-Blue-Core-rgb: 0, 51, 102;
+  --SPEL-Blue-Accent: #5B9BD5;
+  --SPEL-Blue-Tint: #DCEFFD;
+  --SPEL-Green-Core: #1E6B1E;
+  --SPEL-Green-Accent: #58A55C;
+  --SPEL-Green-Tint: #DDF3DD;
+  --SPEL-Yellow-Tint: #FFF5DD;
+  --SPEL-Yellow-Core: #EEAA00;
+  --SPEL-Red-Accent: #FE8A7D;
+  --SPEL-Background: #F8F9FA;
+  --SPEL-White: #ffffff;
+  --SPEL-Extra-Light-Gray: #EEEEEE;
+  --SPEL-Black: #222222;
+  --SPEL-Dark-Gray: #555555;
   --max-width: 1120px;
 }
 
@@ -34,19 +40,19 @@ body {
   display: flex;
   flex-direction: column;
   font-family: "Pretendard", "Noto Sans KR", Arial, sans-serif;
-  color: var(--text);
-  background-color: var(--bg);
+  color: var(--SPEL-Black);
+  background-color: var(--SPEL-Background);
   line-height: 1.6;
 }
 
 a {
-  color: var(--blue);
+  color: var(--SPEL-Blue-Accent);
 }
 
 /* Header / nav */
 header {
-  background-color: var(--navy);
-  color: white;
+  background-color: var(--SPEL-Blue-Core);
+  color: var(--SPEL-White);
   position: sticky;
   top: 0;
   z-index: 100;
@@ -68,7 +74,7 @@ header {
   align-items: center;
   gap: 10px;
   text-decoration: none;
-  color: white;
+  color: var(--SPEL-White);
 }
 
 .brand-logo {
@@ -89,7 +95,7 @@ header {
 
 .brand .brand-kr {
   font-size: 12px;
-  color: #b7c6dc;
+  color: var(--SPEL-Blue-Tint);
 }
 
 nav {
@@ -100,7 +106,7 @@ nav {
 
 nav a {
   text-decoration: none;
-  color: #dbe6f5;
+  color: var(--SPEL-Blue-Accent);
   font-weight: 600;
   font-size: 14px;
   padding: 8px 14px;
@@ -110,12 +116,12 @@ nav a {
 
 nav a:hover {
   background-color: rgba(255, 255, 255, 0.1);
-  color: white;
+  color: var(--SPEL-White);
 }
 
 nav a.active {
-  background-color: var(--teal);
-  color: white;
+  background-color: var(--SPEL-Green-Accent);
+  color: var(--SPEL-White);
 }
 
 #nav-toggle {
@@ -124,7 +130,7 @@ nav a.active {
 
 .nav-toggle-label {
   display: none;
-  color: white;
+  color: var(--SPEL-White);
   font-size: 22px;
   cursor: pointer;
   padding: 4px 8px;
@@ -132,11 +138,11 @@ nav a.active {
 
 /* Hero */
 .hero {
-  background-image: linear-gradient(135deg, rgba(15, 15, 112, 0.7) 0%, rgba(10, 10, 70, 0.7) 100%), url("images/hero-banner.gif");
+  background-image: linear-gradient(135deg, rgba(var(--SPEL-Blue-Core-rgb), 0.75) 0%, rgba(var(--SPEL-Blue-Core-rgb), 0.55) 100%), url("images/hero-banner.gif");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  color: white;
+  color: var(--SPEL-White);
   padding: 72px 24px;
   text-align: center;
 }
@@ -150,21 +156,21 @@ nav a.active {
   margin: 0 auto;
   max-width: 720px;
   font-size: 17px;
-  color: #d6e2f2;
+  color: var(--SPEL-Blue-Tint);
 }
 
 .hero .affil {
   margin-top: 18px;
   font-size: 14px;
-  color: #9fb6d4;
+  color: var(--SPEL-Blue-Tint);
 }
 
 /* Notice banner */
 .notice {
   position: relative;
-  background-color: #fff7e6;
-  border-bottom: 1px solid #f2d38a;
-  color: #a07902;
+  background-color: var(--SPEL-Yellow-Tint);
+  border-bottom: 1px solid var(--SPEL-Yellow-Core);
+  color: var(--SPEL-Yellow-Core);
   padding: 12px 48px;
   text-align: center;
   font-size: 14px;
@@ -172,7 +178,7 @@ nav a.active {
 }
 
 .notice a {
-  color: #a07a08;
+  color: var(--SPEL-Yellow-Core);
   text-decoration: underline;
 }
 
@@ -187,7 +193,7 @@ nav a.active {
   box-shadow: none;
   -webkit-appearance: none;
   appearance: none;
-  color: #a07902;
+  color: var(--SPEL-Yellow-Core);
   font-size: 16px;
   line-height: 1;
   cursor: pointer;
@@ -195,7 +201,7 @@ nav a.active {
 }
 
 .notice-close:hover {
-  color: #7a5b00;
+  color: color-mix(in srgb, var(--SPEL-Yellow-Core) 80%, black);
 }
 
 /* Layout sections */
@@ -228,7 +234,7 @@ section:last-child {
   font-size: 28px;
   font-weight: 800;
   margin: 0;
-  color: var(--navy);
+  color: var(--SPEL-Blue-Core);
 }
 
 .section-head .see-all {
@@ -238,7 +244,7 @@ section:last-child {
 }
 
 .section-intro {
-  color: var(--muted);
+  color: var(--SPEL-Dark-Gray);
   max-width: 800px;
   margin-bottom: 28px;
 }
@@ -258,22 +264,22 @@ section:last-child {
 }
 
 .card {
-  background-color: var(--card);
-  border: 1px solid var(--border);
+  background-color: var(--SPEL-White);
+  border: 1px solid var(--SPEL-Extra-Light-Gray);
   border-radius: 14px;
   padding: 22px;
-  box-shadow: 0 6px 16px rgba(11, 47, 82, 0.05);
+  box-shadow: 0 6px 16px rgba(var(--SPEL-Blue-Core-rgb), 0.05);
 }
 
 .card h3 {
   margin: 0 0 8px 0;
   font-size: 18px;
-  color: var(--navy);
+  color: var(--SPEL-Blue-Core);
 }
 
 .card p {
   margin: 0;
-  color: var(--muted);
+  color: var(--SPEL-Dark-Gray);
   font-size: 14.5px;
 }
 
@@ -281,8 +287,8 @@ section:last-child {
   display: inline-block;
   font-size: 11px;
   font-weight: 700;
-  color: var(--teal);
-  background-color: #e6f4f1;
+  color: var(--SPEL-Green-Accent);
+  background-color: var(--SPEL-Green-Tint);
   border-radius: 999px;
   padding: 3px 10px;
   margin-bottom: 10px;
@@ -300,20 +306,20 @@ section:last-child {
   text-decoration: none;
   font-size: 14px;
   font-weight: 600;
-  color: var(--navy);
-  background-color: #eef3fa;
+  color: var(--SPEL-Blue-Core);
+  background-color: var(--SPEL-Blue-Tint);
   padding: 8px 16px;
   border-radius: 999px;
   transition: background-color 0.15s ease, color 0.15s ease;
 }
 
 .subnav a:hover {
-  background-color: #dbe6f5;
+  background-color: var(--SPEL-Blue-Accent);
 }
 
 .subnav a.active {
-  background-color: var(--teal);
-  color: white;
+  background-color: var(--SPEL-Green-Accent);
+  color: var(--SPEL-White);
 }
 
 /* Clickable hub cards (e.g. Member overview) */
@@ -325,7 +331,7 @@ a.card {
 
 a.card:hover {
   transform: translateY(-2px);
-  box-shadow: 0 10px 22px rgba(11, 47, 82, 0.1);
+  box-shadow: 0 10px 22px rgba(var(--SPEL-Blue-Core-rgb), 0.1);
 }
 
 a.card .card-arrow {
@@ -333,7 +339,7 @@ a.card .card-arrow {
   margin-top: 10px;
   font-size: 13px;
   font-weight: 700;
-  color: var(--teal);
+  color: var(--SPEL-Green-Accent);
 }
 
 /* Clickable cards that open a popup (e.g. Research areas) */
@@ -344,7 +350,7 @@ a.card .card-arrow {
 
 .card.clickable:hover {
   transform: translateY(-2px);
-  box-shadow: 0 10px 22px rgba(11, 47, 82, 0.1);
+  box-shadow: 0 10px 22px rgba(var(--SPEL-Blue-Core-rgb), 0.1);
 }
 
 .member-dialog.wide-dialog {
@@ -364,7 +370,7 @@ a.card .card-arrow {
   border-radius: 12px;
   object-fit: contain;
   margin-bottom: 16px;
-  background-color: #ffffff;
+  background-color: var(--SPEL-White);
 }
 
 .dialog-photo-fallback {
@@ -372,11 +378,11 @@ a.card .card-arrow {
   aspect-ratio: 16 / 9;
   border-radius: 12px;
   margin-bottom: 16px;
-  background-color: #dbe6f5;
+  background-color: var(--SPEL-Blue-Accent);
   display: flex;
   align-items: center;
   justify-content: center;
-  color: var(--navy);
+  color: var(--SPEL-Blue-Core);
   font-size: 13px;
 }
 
@@ -394,7 +400,7 @@ a.card .card-arrow {
 
 .dialog-description {
   font-size: 14.5px;
-  color: var(--text);
+  color: var(--SPEL-Black);
   margin: 8px 0 16px 0;
 }
 
@@ -406,9 +412,9 @@ a.card .card-arrow {
 
 .dialog-focus li {
   font-size: 14px;
-  color: var(--text);
+  color: var(--SPEL-Black);
   padding: 8px 0;
-  border-bottom: 1px dashed var(--border);
+  border-bottom: 1px dashed var(--SPEL-Extra-Light-Gray);
 }
 
 .dialog-focus li:last-child {
@@ -416,20 +422,20 @@ a.card .card-arrow {
 }
 
 .dialog-focus .focus-label {
-  color: var(--teal);
+  color: var(--SPEL-Green-Accent);
   font-weight: 700;
 }
 
 .dialog-focus li.dialog-en-title {
-  color: var(--navy);
+  color: var(--SPEL-Blue-Core);
   font-weight: 600;
   text-align: center;
 }
 
 .dialog-members {
   font-size: 13.5px;
-  color: var(--muted);
-  border-top: 1px solid var(--border);
+  color: var(--SPEL-Dark-Gray);
+  border-top: 1px solid var(--SPEL-Extra-Light-Gray);
   padding-top: 12px;
   margin: 0;
 }
@@ -446,15 +452,15 @@ a.card .card-arrow {
   text-align: center;
   margin-top: 16px;
   padding-top: 14px;
-  border-top: 1px solid var(--border);
+  border-top: 1px solid var(--SPEL-Extra-Light-Gray);
   font-size: 13px;
   font-family: inherit;
-  color: var(--muted);
+  color: var(--SPEL-Dark-Gray);
   cursor: pointer;
 }
 
 .popup-dont-show:hover {
-  color: var(--navy);
+  color: var(--SPEL-Blue-Core);
   text-decoration: underline;
 }
 
@@ -465,7 +471,7 @@ a.card .card-arrow {
 
 .member-group h3 {
   font-size: 18px;
-  color: var(--teal);
+  color: var(--SPEL-Green-Accent);
   margin-bottom: 14px;
   text-transform: uppercase;
   letter-spacing: 0.5px;
@@ -479,8 +485,8 @@ a.card .card-arrow {
 }
 
 .member-item {
-  background-color: var(--card);
-  border: 1px solid var(--border);
+  background-color: var(--SPEL-White);
+  border: 1px solid var(--SPEL-Extra-Light-Gray);
   border-radius: 10px;
   padding: 12px 16px;
   display: flex;
@@ -492,14 +498,14 @@ a.card .card-arrow {
   cursor: pointer;
   text-align: left;
   font-family: inherit;
-  border: 1px solid var(--border);
+  border: 1px solid var(--SPEL-Extra-Light-Gray);
   transition: box-shadow 0.15s ease, transform 0.15s ease;
 }
 
 .member-item.clickable:hover {
-  box-shadow: 0 8px 18px rgba(11, 47, 82, 0.08);
+  box-shadow: 0 8px 18px rgba(var(--SPEL-Blue-Core-rgb), 0.08);
   transform: translateY(-1px);
-  border-color: var(--teal);
+  border-color: var(--SPEL-Green-Accent);
 }
 
 /* Member detail popup */
@@ -509,11 +515,11 @@ a.card .card-arrow {
   padding: 28px;
   max-width: 380px;
   width: 90%;
-  box-shadow: 0 20px 45px rgba(11, 47, 82, 0.25);
+  box-shadow: 0 20px 45px rgba(var(--SPEL-Blue-Core-rgb), 0.25);
 }
 
 .member-dialog::backdrop {
-  background-color: rgba(8, 31, 56, 0.55);
+  background-color: rgba(var(--SPEL-Blue-Core-rgb), 0.55);
 }
 
 .dialog-close {
@@ -527,14 +533,14 @@ a.card .card-arrow {
   appearance: none;
   background: none;
   font-size: 18px;
-  color: var(--muted);
+  color: var(--SPEL-Dark-Gray);
   cursor: pointer;
   line-height: 1;
   padding: 4px;
 }
 
 .dialog-close:hover {
-  color: var(--navy);
+  color: var(--SPEL-Blue-Core);
 }
 
 .dialog-avatar,
@@ -548,8 +554,8 @@ a.card .card-arrow {
 }
 
 .dialog-avatar-fallback {
-  background-color: var(--navy);
-  color: white;
+  background-color: var(--SPEL-Blue-Core);
+  color: var(--SPEL-White);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -560,13 +566,13 @@ a.card .card-arrow {
 .member-dialog h3 {
   margin: 0 0 4px 0;
   text-align: center;
-  color: var(--navy);
+  color: var(--SPEL-Blue-Core);
   font-size: 19px;
 }
 
 .dialog-position {
   text-align: center;
-  color: var(--teal);
+  color: var(--SPEL-Green-Accent);
   font-weight: 600;
   font-size: 13.5px;
   margin: 0 0 18px 0;
@@ -576,13 +582,13 @@ a.card .card-arrow {
   list-style: none;
   padding: 0;
   margin: 0;
-  border-top: 1px solid var(--border);
+  border-top: 1px solid var(--SPEL-Extra-Light-Gray);
   padding-top: 14px;
 }
 
 .dialog-edu li {
   font-size: 13.5px;
-  color: var(--text);
+  color: var(--SPEL-Black);
   padding: 5px 0;
 }
 
@@ -596,12 +602,12 @@ a.card .card-arrow {
 }
 
 .avatar {
-  background-color: #dbe6f5;
+  background-color: var(--SPEL-Blue-Accent);
 }
 
 .avatar-fallback {
-  background-color: var(--navy);
-  color: white;
+  background-color: var(--SPEL-Blue-Core);
+  color: var(--SPEL-White);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -626,12 +632,12 @@ a.card .card-arrow {
 
 .member-item .name {
   font-weight: 700;
-  color: var(--text);
+  color: var(--SPEL-Black);
 }
 
 .member-item .meta {
   font-size: 13px;
-  color: var(--muted);
+  color: var(--SPEL-Dark-Gray);
   margin-top: 2px;
 }
 
@@ -648,8 +654,8 @@ a.card .card-arrow {
   aspect-ratio: 1280 / 1592;
   height: auto;
   border-radius: 12px;
-  background-color: #dbe6f5;
-  color: var(--navy);
+  background-color: var(--SPEL-Blue-Accent);
+  color: var(--SPEL-Blue-Core);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -662,18 +668,18 @@ a.card .card-arrow {
 .professor-basic h3 {
   margin: 0 0 4px 0;
   font-size: 24px;
-  color: var(--navy);
+  color: var(--SPEL-Blue-Core);
 }
 
 .professor-basic .title {
-  color: var(--muted);
+  color: var(--SPEL-Dark-Gray);
   margin-bottom: 10px;
   font-size: 14px;
 }
 
 .professor-basic .contact {
   font-size: 14px;
-  color: var(--text);
+  color: var(--SPEL-Black);
 }
 
 .professor-sections {
@@ -685,7 +691,7 @@ a.card .card-arrow {
 .card ul {
   margin: 0;
   padding-left: 20px;
-  color: var(--muted);
+  color: var(--SPEL-Dark-Gray);
   font-size: 14.5px;
 }
 
@@ -706,7 +712,7 @@ a.card .card-arrow {
 
 .pub-list li {
   padding: 14px 0;
-  border-bottom: 1px solid var(--border);
+  border-bottom: 1px solid var(--SPEL-Extra-Light-Gray);
   font-size: 14.5px;
 }
 
@@ -716,12 +722,12 @@ a.card .card-arrow {
 
 .pub-id {
   font-weight: 700;
-  color: var(--teal);
+  color: var(--SPEL-Green-Accent);
   margin-right: 8px;
 }
 
 .pub-note {
-  color: var(--muted);
+  color: var(--SPEL-Dark-Gray);
   font-size: 13.5px;
   font-style: italic;
   margin-top: 8px;
@@ -731,7 +737,7 @@ a.card .card-arrow {
   margin-left: 8px;
   font-size: 13px;
   font-weight: 600;
-  color: var(--blue);
+  color: var(--SPEL-Blue-Accent);
   text-decoration: none;
   white-space: nowrap;
 }
@@ -746,8 +752,8 @@ a.card .card-arrow {
 
 .pub-year h3 {
   font-size: 15px;
-  color: var(--navy);
-  background-color: #eef3fa;
+  color: var(--SPEL-Blue-Core);
+  background-color: var(--SPEL-Blue-Tint);
   display: inline-block;
   padding: 4px 12px;
   border-radius: 999px;
@@ -755,8 +761,8 @@ a.card .card-arrow {
 }
 
 .scholar-bar {
-  background-color: #eef3fa;
-  border: 1px solid var(--border);
+  background-color: var(--SPEL-Blue-Tint);
+  border: 1px solid var(--SPEL-Extra-Light-Gray);
   border-radius: 12px;
   padding: 14px 20px;
   margin-bottom: 32px;
@@ -766,7 +772,7 @@ a.card .card-arrow {
 }
 
 .scholar-bar a {
-  color: var(--blue);
+  color: var(--SPEL-Blue-Core);
   text-decoration: none;
 }
 
@@ -781,8 +787,8 @@ a.card .card-arrow {
 
 .news-month h3 {
   font-size: 15px;
-  color: var(--navy);
-  background-color: #eef3fa;
+  color: var(--SPEL-Blue-Core);
+  background-color: var(--SPEL-Blue-Tint);
   display: inline-block;
   padding: 4px 12px;
   border-radius: 999px;
@@ -793,7 +799,7 @@ a.card .card-arrow {
   display: flex;
   gap: 12px;
   padding: 10px 0;
-  border-bottom: 1px dashed var(--border);
+  border-bottom: 1px dashed var(--SPEL-Extra-Light-Gray);
   font-size: 14.5px;
 }
 
@@ -802,7 +808,7 @@ a.card .card-arrow {
 }
 
 .news-date {
-  color: var(--muted);
+  color: var(--SPEL-Dark-Gray);
   font-size: 13px;
   white-space: nowrap;
   flex-shrink: 0;
@@ -816,21 +822,21 @@ a.card .card-arrow {
   padding: 2px 8px;
   border-radius: 999px;
   margin-right: 6px;
-  color: white;
+  color: var(--SPEL-White);
 }
 
-.tag-논문 { background-color: var(--blue); }
-.tag-졸업 { background-color: var(--teal); }
-.tag-수상 { background-color: #b8860b; }
-.tag-과제 { background-color: #7a4fb5; }
-.tag-입학\/진학 { background-color: #4a5a70; }
-.tag-기타 { background-color: #6b7280; }
+.tag-논문 { background-color: var(--SPEL-Blue-Accent); }
+.tag-졸업 { background-color: var(--SPEL-Green-Accent); }
+.tag-수상 { background-color: var(--SPEL-Yellow-Core); }
+.tag-과제 { background-color: var(--SPEL-Blue-Core); }
+.tag-입학\/진학 { background-color: var(--SPEL-Green-Core); }
+.tag-기타 { background-color: var(--SPEL-Red-Accent); }
 
 /* Gallery / generic toggle groups */
 .gallery-year,
 .toggle-group {
   margin-bottom: 12px;
-  border-bottom: 1px solid var(--border);
+  border-bottom: 1px solid var(--SPEL-Extra-Light-Gray);
   padding-bottom: 20px;
 }
 
@@ -840,7 +846,7 @@ a.card .card-arrow {
   list-style: none;
   font-size: 22px;
   font-weight: 700;
-  color: var(--navy);
+  color: var(--SPEL-Blue-Core);
   padding: 12px 0;
   display: flex;
   align-items: center;
@@ -855,7 +861,7 @@ a.card .card-arrow {
 .gallery-year summary .arrow,
 .toggle-group summary .arrow {
   display: inline-block;
-  color: var(--teal);
+  color: var(--SPEL-Green-Accent);
   transition: transform 0.15s ease;
 }
 
@@ -877,18 +883,18 @@ a.card .card-arrow {
 }
 
 .album-card {
-  background-color: var(--card);
-  border: 1px solid var(--border);
+  background-color: var(--SPEL-White);
+  border: 1px solid var(--SPEL-Extra-Light-Gray);
   border-radius: 14px;
   overflow: hidden;
   cursor: pointer;
-  box-shadow: 0 6px 16px rgba(11, 47, 82, 0.05);
+  box-shadow: 0 6px 16px rgba(var(--SPEL-Blue-Core-rgb), 0.05);
   transition: transform 0.15s ease, box-shadow 0.15s ease;
 }
 
 .album-card:hover {
   transform: translateY(-2px);
-  box-shadow: 0 10px 22px rgba(11, 47, 82, 0.1);
+  box-shadow: 0 10px 22px rgba(var(--SPEL-Blue-Core-rgb), 0.1);
 }
 
 .album-thumb,
@@ -897,14 +903,14 @@ a.card .card-arrow {
   aspect-ratio: 4 / 3;
   object-fit: cover;
   display: block;
-  background-color: #dbe6f5;
+  background-color: var(--SPEL-Blue-Accent);
 }
 
 .album-thumb-fallback {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: var(--navy);
+  color: var(--SPEL-Blue-Core);
   font-size: 13px;
   text-align: center;
   padding: 12px;
@@ -914,20 +920,20 @@ a.card .card-arrow {
   padding: 12px 14px;
   font-size: 14px;
   font-weight: 400;
-  color: var(--text);
+  color: var(--SPEL-Black);
 }
 
 /* Footer */
 footer {
   padding: 36px 24px;
   text-align: center;
-  background-color: var(--navy-dark);
-  color: #b7c6dc;
+  background-color: var(--SPEL-Blue-Core);
+  color: var(--SPEL-Blue-Tint);
   font-size: 13.5px;
 }
 
 footer a {
-  color: #d6e2f2;
+  color: var(--SPEL-Blue-Tint);
 }
 
 /* Responsive */
