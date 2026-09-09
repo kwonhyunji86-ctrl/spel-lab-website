@@ -1,6 +1,6 @@
 @font-face {
-  font-family: "Manrope";
-  src: url("font/Manrope-VariableFont_wght.ttf") format("truetype");
+  font-family: "Pretendard";
+  src: url("font/PretendardVariable.ttf") format("truetype");
   font-weight: 200 800;
   font-style: normal;
   font-display: swap;
@@ -33,7 +33,7 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  font-family: "Manrope", "Noto Sans KR", Arial, sans-serif;
+  font-family: "Pretendard", "Noto Sans KR", Arial, sans-serif;
   color: var(--text);
   background-color: var(--bg);
   line-height: 1.6;
