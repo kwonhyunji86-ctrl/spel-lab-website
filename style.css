@@ -249,6 +249,25 @@ section:last-child {
   margin-bottom: 28px;
 }
 
+.about-banner {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.about-logo {
+  width: 96px;
+  height: 96px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+.about-banner .section-intro {
+  flex: 1;
+  min-width: 260px;
+}
+
 /* Cards / grid */
 .grid {
   display: grid;
