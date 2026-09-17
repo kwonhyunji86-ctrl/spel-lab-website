@@ -169,7 +169,6 @@ nav a.active {
 .notice {
   position: relative;
   background-color: var(--SPEL-Yellow-Tint);
-  border-bottom: 1px solid var(--SPEL-Yellow-Core);
   color: var(--SPEL-Yellow-Core);
   padding: 12px 48px;
   text-align: center;
