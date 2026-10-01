@@ -77,6 +77,7 @@ const GALLERY_DATA = {
     { folder: "2026. 09. 01. 세미나", count: 3 },
     { folder: "2026. 09. 04. KIER 학연 학술상 수상 - 김한아 학생", count: 3 },
     { folder: "2026. 09. 18. 건강달리기 대회", count: 5 },
+    { folder: "2026. 09. 29. 세미나", count: 2 },
   ],
   2025: [
     { folder: "2025. 02. 14. 학위수여식", count: 16, exts: { 4: "png" } },
