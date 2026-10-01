@@ -318,6 +318,21 @@
             </ul>
           </dialog>
 
+          <div class="member-item clickable" role="button" tabindex="0"
+               onclick="document.getElementById('dlg-hyeonseok-jin').showModal()" onkeydown="if(event.key==='Enter')this.click()">
+            <img class="avatar" src="../images/members/hyeonseok-jin.jpg" data-name="Hyeonseok Jin" alt="Hyeonseok Jin" onerror="avatarFallback(this)">
+            <div class="info"><div class="name">Hyeonseok Jin (진현석)</div><div class="meta">M.S. Student (2027 Spring&ndash;)</div></div>
+          </div>
+          <dialog id="dlg-hyeonseok-jin" class="member-dialog">
+            <button class="dialog-close" onclick="this.closest('dialog').close()">✕</button>
+            <img class="dialog-avatar" src="../images/members/hyeonseok-jin.jpg" data-name="Hyeonseok Jin" alt="Hyeonseok Jin" onerror="avatarFallback(this,'dialog-avatar-fallback')">
+            <h3>Hyeonseok Jin (진현석)</h3>
+            <p class="dialog-position">M.S. Student (2027 Spring&ndash;)</p>
+            <ul class="dialog-edu">
+              <li>B.S. Chemical Engineering, University of Ulsan, 2020&ndash;</li>
+            </ul>
+          </dialog>
+
         </div>
       </div>
 
