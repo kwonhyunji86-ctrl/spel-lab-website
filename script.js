@@ -79,6 +79,7 @@ const GALLERY_DATA = {
     { folder: "2026. 09. 18. 건강달리기 대회", count: 5 },
     { folder: "2026. 09. 29. 세미나", count: 2 },
     { folder: "2026. 10. 06. - 10. 08. 한국화학공학회 가을 총회", count: 4 },
+    { folder: "2026. 10. 27. 세미나", count: 2 },
   ],
   2025: [
     { folder: "2025. 02. 14. 학위수여식", count: 16, exts: { 4: "png" } },
